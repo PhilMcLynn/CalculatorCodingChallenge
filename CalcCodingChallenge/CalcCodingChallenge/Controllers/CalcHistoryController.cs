@@ -48,7 +48,7 @@ namespace CalcCodingChallenge.Controllers
         public async Task<ActionResult<CalcHistory>> CalculateFromText( CalcHistory calcHistory)
         {
             calcHistory.SourceIPAddress = HttpContext.Connection.RemoteIpAddress.ToString();
-
+            calcHistory.CalcTime = DateTime.Now;
             DataTable dt = new DataTable();
             try
             {

@@ -18,5 +18,8 @@ namespace CalcCodingChallenge.Models
         public string CalcTextAnswer { get; set; }
         [Column(TypeName = "nvarchar(50)")]
         public string SourceIPAddress { get; set; }
+
+        [Column (TypeName = "datetime")]
+        public DateTime CalcTime { get; set; }
     }
 }
