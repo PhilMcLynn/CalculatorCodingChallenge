@@ -1,0 +1,23 @@
+
+    <form class="calculator" name="calc" ng-submit="remoteCalculate()" >
+        <input class="value" type="text" name="txt" readonly="" ng-model="calcTxt">
+            <span class="num clear" ng-click="clearCalcTxt()">c</span>
+            <span class="num" ng-click="appendCalcTxt('/')">/</span>
+            <span class="num" ng-click="appendCalcTxt('*')">*</span>
+            <span class="num" ng-click="appendCalcTxt('7')">7</span>
+            <span class="num" ng-click="appendCalcTxt('8')">8</span>
+            <span class="num" ng-click="appendCalcTxt('9')">9</span>
+            <span class="num" ng-click="appendCalcTxt('-')">-</span>
+            <span class="num" ng-click="appendCalcTxt('4')">4</span>
+            <span class="num" ng-click="appendCalcTxt('5')">5</span>
+            <span class="num" ng-click="appendCalcTxt('6')">6</span>
+            <span class="num plus" ng-click="appendCalcTxt('+')">+</span>
+            <span class="num" ng-click="appendCalcTxt('3')">3</span>
+            <span class="num" ng-click="appendCalcTxt('2')">2</span>
+            <span class="num" ng-click="appendCalcTxt('1')">1</span>
+            <span class="num" ng-click="appendCalcTxt('0')">0</span>
+            <span class="num" ng-click="appendCalcTxt('00')">00</span>
+            <span class="num" ng-click="appendCalcTxt('.')">.</span>    
+            <span class="num equal" ng-click="remoteCalcTxt()">=</span>    
+        </input>
+    </form>
